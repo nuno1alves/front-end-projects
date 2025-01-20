@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS -->
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">This is a survey form for collecting some data about you.</p>
+    </header>
+    
+    <form id="survey-form">
+        <div>
+            <label for="name" id="name-label">Name</label>
+            <input id="name" type="text" name="name" placeholder="Enter your name" required>
+        </div>
+        <div>
+            <label for="email" id="email-label">Email</label>
+            <input id="email" type="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div>
+            <label for="number" id="number-label">Age</label>
+            <input id="number" type="number" name="age" min="1" max="120" placeholder="Age" required>
+        </div>
+        <div>
+            <label for="dropdown">What is your favorite color?</label>
+            <select id="dropdown" name="color" required>
+                <option value="">Select a color</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="red">Red</option>
+            </select>
+        </div>
+        <div class="radio-group">
+            <p>Select your football club</p>
+            <label>
+                <input name="football-club" type="radio" value="FCP" checked> FCP
+            </label>
+            <label>
+                <input name="football-club" type="radio" value="SCP"> SCP
+            </label>
+            <label>
+                <input name="football-club" type="radio" value="SLB"> SLB
+            </label>
+        </div>
+        <div class="watch-games">
+            <p>You watch the games where?</p>
+            <label>
+                <input type="checkbox" value="TV"> TV
+            </label>
+            <label>
+                <input type="checkbox" value="Smartphone"> Smartphone
+            </label>
+            <label>
+                <input type="checkbox" value="Tablet"> Tablet
+            </label>
+            <label>
+                <input type="checkbox" value="Stadium"> Stadium
+            </label>
+        </div>
+        <div>
+            <label for="comments">Any comments or suggestions?</label>
+            <textarea id="comments" name="comment" placeholder="Enter your comment here..." rows="4"></textarea>
+        </div>
+        <div>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
