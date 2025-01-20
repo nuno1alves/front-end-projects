@@ -1,0 +1,120 @@
+body{
+  background-color: #e5e8e8;
+  margin-left: 40px;
+  font-family: sans-serif;
+}
+.heading{
+  position: sticky;
+  top: 0;
+}
+#header{
+  display: flex;
+  align-items: center;
+  background-color: #e5e8e8;
+}
+
+#nav-bar{
+  margin-left: auto;
+}
+
+.nav-link{
+  padding: 0 5px 0 0;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+}
+
+.nav-link:last-of-type{
+  padding-right: 0;
+}
+
+.get-started, #How_It_Works{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form{
+  display: flex;
+  flex-direction: column; 
+}
+
+#submit{
+  margin-top: 10px;
+  background-color: #f1c40f;
+  border: none;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#Pricing div{
+  border: 1px solid black;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+#Pricing button{
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  background-color: #f1c40f;
+  border: none;
+  border-radius: 5px;
+}
+
+#Pricing h3 {
+    background-color: #b2babb; /* Cor de fundo cinza */
+    width: 100%; /* Ocupa toda a largura da caixa */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin: 0; /* Remove a margem padrão do h3 */
+    padding: 10px; /* Espaçamento interno para ajustar a altura */
+    box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+i{
+  font-size: 50px;
+  color: orange;
+}
+
+#Features{
+  display: flex;
+  margin-bottom: 50px;
+  margin-top: 25px;
+}
+
+#Pricing{
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+
+@media (max-width: 1000px){
+  #Features{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  margin-top: 25px;
+}
+
+}
+
+@media (max-width: 700px){
+  #video{
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px){
+  #Pricing{
+  display: grid; /* Ativa o Grid */
+  grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas iguais */
+  gap: 10px; /* Espaçamento entre os itens */
+  
+}
+#Features p{
+  margin: 10px;
+}
+
+}

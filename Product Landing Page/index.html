@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Speakers 4urself</title>
+  </head>
+  <body>
+    <section class="heading">
+    <header id="header">
+      <img id="header-img" src="https://png.pngtree.com/png-vector/20230130/ourmid/pngtree-speakers-vector-art-png-image_6576095.png" width="100">
+      <h2>Speakers 4urself</h2>
+      <nav id="nav-bar">
+        <a class="nav-link" href="#Features">Features</a>
+        <a class="nav-link" href="#How_It_Works">How It Works</a>
+        <a class="nav-link" href="#Pricing">Pricing</a>
+      </nav>
+    </header>
+    </section>
+    <section class="get-started">
+      <h1>Let the bass speak</h1>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" type="email" placeholder="Enter your email address" name="email" required>
+        <input id="submit" type="submit" value="GET STARTED">
+      </form>
+    </section>
+    <section id="Features">
+      <div class="premium-materials">
+      <i class="fa-solid fa-fire"></i>
+      <h2>Premium Materials</h2>
+      <p>Our products use high quality materials, increasing durability and sound quality.</p>
+      </div>
+      <div class="fast-shipping">
+      <i class="fa-solid fa-truck"></i>
+      <h2>Fast Shipping</h2>
+      <p>We make sure you recieve your speakers ASAP. We also provide free returns if you are not satisfied.</p>
+      </div>
+      <div class="quality-assurance">
+      <i class="fa-solid fa-award"></i>
+      <h2>Quality Assurance</h2>
+      <p>With our lifetime warranty you just need to relax and enjoy your music.</p>
+    </section>
+    <section id="How_It_Works">
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/FN2W7C7Snr8?si=6Hh0fXZZ8Co4yGBD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <section id="Pricing">
+      <div class="product1">
+        <h3>100 W Speaker</h3>
+        <h2>$200</h2>
+        <p>Text describing the speaker</p>
+        <p>Text describing the speaker</p>
+        <p>Text describing the speaker</p>
+        <p>Text describing the speaker</p>
+        <button onclick="selectProduct('Product 1')">SELECT</button> 
+      </div>
+      <div class="product2">
+        <h3>200 W Speaker</h3>
+        <h2>$400</h2>
+        <p>Text describing the speaker</p>
+        <p>Text describing the speaker</p>
+        <p>Text describing the speaker</p>
+        <p>Text describing the speaker</p>
+        <button onclick="selectProduct('Product 2')">SELECT</button>
+      </div>
+      <div class="product3">
+        <h3>300 W Speaker</h3>
+        <h2>$600</h2>
+        <p>Text describing the speaker</p>
+        <p>Text describing the speaker</p>
+        <p>Text describing the speaker</p>
+        <p>Text describing the speaker</p>
+        <button onclick="selectProduct('Product 3')">SELECT</button>
+      </div>
+    </section>
+    <script>
+  function selectProduct(product) {
+    alert(product + " selected!");
+  }
+</script>
+  </body>
+</html>
