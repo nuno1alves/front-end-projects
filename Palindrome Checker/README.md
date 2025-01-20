@@ -1,3 +1,3 @@
 Projeto que faz parte do módulo JavaScript Algorithms and Data Structures. Linguagem utilizadas HTML, CSS e JavaScript.
 Projeto intitulado Palindrome Checker, verifica se uma palavra introduzida é um palindromi.
-https://github.com/nuno1alves/portfolio-websites/blob/890edb6d18d6f94a6e1edae329e5f99e44583f7e/Palindrome%20Checker/preview_palindrome_checker.png
+![Palindrome checker](https://github.com/nuno1alves/portfolio-websites/blob/890edb6d18d6f94a6e1edae329e5f99e44583f7e/Palindrome%20Checker/preview_palindrome_checker.png)
