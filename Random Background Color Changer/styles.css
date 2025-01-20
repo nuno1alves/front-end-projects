@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: #f1be32;
+    --golden-yellow: #feac32;
+    --dark-purple: #110815;
+    --light-grey: #efefef;
+}
+
+body {
+    background-color: var(--dark-purple);
+    color: var(--light-grey);
+    text-align: center;
+}
+
+.bg-information-container {
+    margin: 25px 0 15px;
+    font-size: 1.2rem;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    color: var(--dark-purple);
+    /*o background-color funciona como
+    um fallback, caso o navegador não
+    consiga renderizar o background-image*/
+    background-color: var(--golden-yellow);
+    /*o background-image vai se sobrepor
+    ao background-color*/
+    background-image: linear-gradient(#fecc4c,#ffac33);
+    border-color: var(--golden-yellow);
+    border-width: 3px;
+    border-style: solid;
+}
+
+.btn:hover {
+    background-image: linear-gradient(#ffcc4c,#f89808);
+}
