@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>JOGO DA FORCA</h1>
+    <details>
+      <summary>Instruções</summary>
+      <p>O jogador deve advinhar a palavra. Para tal pode:</p>
+      <p>Verificar a dica.</p>
+      <p>
+        Contar o número de linhas que indicam o número de letras que constituem
+        a palavra.
+      </p>
+      <p>Utilizar o seletor de letras.</p>
+
+      <p>Por cada letra errada uma parte do boneco é desenhada.</p>
+      <p>Pode errar 5 letras.</p>
+      <p>O jogador ganha se completar a palavra corretamente.</p>
+      <p>O jogador perde se errar mais de 5 letras.</p>
+    </details>
+    <div class="game-container">
+      <div class="hangman-container">
+        <img id="image" src="./recursos/forca.png" alt="forca de madeira" />
+        <canvas id="myCanvas"></canvas>
+      </div>
+      <div class="controls-container">
+        <p id="tips">Dica: <span id="tips-output"></span></p>
+        <p id="tracos"></p>
+        <div class="keyboard">
+          <!-- Primeira linha -->
+          <div class="button-group row">
+            <button>Q</button>
+            <button>W</button>
+            <button>E</button>
+            <button>R</button>
+            <button>T</button>
+            <button>Y</button>
+            <button>U</button>
+            <button>I</button>
+            <button>O</button>
+            <button>P</button>
+          </div>
+
+          <!-- Segunda linha -->
+          <div class="button-group row">
+            <button>A</button>
+            <button>S</button>
+            <button>D</button>
+            <button>F</button>
+            <button>G</button>
+            <button>H</button>
+            <button>J</button>
+            <button>K</button>
+            <button>L</button>
+          </div>
+
+          <!-- Terceira linha -->
+          <div class="button-group row">
+            <button>Z</button>
+            <button>X</button>
+            <button>C</button>
+            <button>V</button>
+            <button>B</button>
+            <button>N</button>
+            <button>M</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reset-btn hide">
+      <h3 id="ganhou-perdeu"></h3>
+      <button type="button" id="reset-btn" onclick="window.location.reload();">Reiniciar</button>
+    </div>
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="./recursos/palavras.js"></script>
+  </body>
+</html>

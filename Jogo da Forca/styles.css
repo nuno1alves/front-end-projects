@@ -1,0 +1,69 @@
+h1,
+details,
+.reset-btn {
+  text-align: center;
+}
+
+details {
+    padding-bottom: 20px;;
+}
+
+.hide {
+  display: none;
+}
+
+.reset-btn {
+  margin: 20px;
+}
+
+.game-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.keyboard {
+  display: grid;
+  gap: 10px;
+  min-width: 320px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 5px;
+  justify-content: center;
+}
+
+.hangman-container {
+  position: relative;
+}
+
+#myCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+}
+
+#tracos {
+  text-align: center;
+  transform: scaleX(2); /* Estica horizontalmente */
+  font-size: 20px; /* Ajusta o tamanho da fonte */
+}
+
+#tips {
+  text-align: start;
+}
+
+@media (min-width: 700px) {
+  .game-container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
