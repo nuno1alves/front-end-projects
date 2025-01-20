@@ -1,0 +1,2 @@
+Projeto que faz parte do Design de páginas web responsivas. Intitula-se Tribute Page e usa as linguagens HTML e CSS. 
+Página de tributo a um piloto com algumas informações sobre a sua biografia.
