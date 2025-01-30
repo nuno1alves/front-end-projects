@@ -6,6 +6,7 @@ Conversão de números inteiros para números romanos.
 Exibição de mensagens de erro quando o número inserido é inválido ou fora do intervalo permitido (1-3999).
 Mudança de cor do fundo com base na validade do número: verde para entradas válidas e vermelho para entradas inválidas.
 Interface responsiva e simples de usar.
+
 Tecnologias Utilizadas
 HTML: Estrutura da página e elementos de entrada e exibição.
 CSS: Estilo e design, utilizando variáveis CSS para cores e tipografia personalizadas.
