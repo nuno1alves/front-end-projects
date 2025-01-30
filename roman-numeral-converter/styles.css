@@ -44,7 +44,7 @@ body {
 
 .output {
     color: var(--title-color);
-    background-color: var(--container-color-alert);
+    background-color: var(--container-color);
 }
 
 h1,
