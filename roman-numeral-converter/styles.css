@@ -3,7 +3,7 @@
     --bg-color2: #75a0c3;
     --btn-color: #dcc9b8;
     --title-color: #fefefe;
-    --container-color: hsl(0, 100%, 100%, 0.3);
+    --container-color: hsla(0, 100%, 100%, 0.3);
     --container-color-alert: hsla(0, 100%, 50%, 0.3);
     --font-family: 'EB Garamond', serif;
 }
