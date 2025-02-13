@@ -3,7 +3,7 @@ const results = document.getElementById("results-div");
 const checkBtn = document.getElementById("check-btn");
 const clearBtn = document.getElementById("clear-btn");
 
-const regex = /^1?\s*\(?[1-9]\d{2}\)?\s*-?[1-9]\d{2}\s*-?[1-9]\d{3}$/;
+const regex = /^1?\s?(\(\d{3}\)|\d{3})\s?\-?\d{3}\s?\-?\d{4}$/;
 
 const checkInput = () => {
 
@@ -27,9 +27,9 @@ const checkInput = () => {
 
 checkBtn.addEventListener("click", checkInput);
 
-checkBtn.addEventListener("keydown", (e) => {
+userInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
-        showMsg();
+        checkInput();
     }
 });
 
