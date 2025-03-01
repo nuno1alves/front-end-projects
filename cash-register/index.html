@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Cash Register</h1>
+    <div id="change-due"></div>
+
+    <div id="cash-register">
+        <div id="screen-price-back" class="register-outlines">
+            <div id="screen-price" class="register-outlines"></div>
+        </div>
+        <div id="screen-price-holder" class="register-outlines"></div>
+        <div id="register-head" class="register-outlines">
+            <div id="enter-cash-panel" class="register-outlines">
+                <label for="user-input">Enter Cash:</label>
+                <input type="number" id="user-input">
+                <button type="button" id="purchase-btn">Purchase</button>
+            </div>
+        </div>
+        <div id="register-body" class="register-outlines">
+            <div id="register-btns">
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+            <div id="change-in-drawer"></div>
+        </div>
+        <div id="register-drawer" class="register-outlines">
+            <div id="drawer-handle" class="register-outlines"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

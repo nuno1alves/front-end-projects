@@ -1,0 +1,179 @@
+:root {
+    --primary-bg: #f4f4f4;
+    --text-color: #333;
+    --border-color: #666;
+    --border-radius: 5px;
+    --panel-bg: #ddd;
+    --screen-bg: black;
+    --screen-text: lime;
+    --button-bg: #007bff;
+    --button-hover-bg: #0056b3;
+    --register-head-bg: #bbb;
+    --drawer-bg: #999;
+    --handle-bg: #555;
+    --btn-bg: #444;
+    --btn-hover-bg: #222;
+    --btn-border: white;
+    --bg-color1: rgb(234, 147, 246);
+    --bg-color2: rgb(87, 18, 69);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: var(--primary-bg);
+    margin: 0;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, var(--bg-color1), var(--bg-color2));
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+h1 {
+    color: var(--text-color);
+}
+
+label {
+    font-size: 12px;
+}
+
+#cash-register {
+    width: 350px;
+    margin: 20px auto;
+    position: relative;
+    padding-top: 100px;
+}
+
+.register-outlines {
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 5px;
+    background-color: var(--panel-bg);
+}
+
+#screen-price-back {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    background-color: var(--screen-bg);
+    height: 40px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#screen-price-holder {
+    position: absolute;
+    top: 49px;
+    right: 75px;
+    width: 1px;
+    height: 40px;
+}
+
+#screen-price {
+    background-color: var(--screen-text);
+    width: 80%;
+    height: 60%;
+    border-radius: 3px;
+}
+
+#register-head {
+    width: 300px;
+    padding: 5px;
+    background-color: var(--register-head-bg);
+    margin: 0 auto;
+}
+
+#enter-cash-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="number"] {
+    padding: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    width: 50%;
+    height: 10px;
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 2px;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--button-bg);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-hover-bg);
+}
+
+#register-body {
+    padding: 10px;
+    background-color: var(--panel-bg);
+    clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+    width: 325px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#change-in-drawer {
+    width: 50%;
+    height: 90%;
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+}
+
+#register-btns {
+    width: 20%;
+    height: 30%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+
+#register-btns button {
+    width: 15px;
+    height: 15px;
+    background-color: var(--btn-bg);
+    border: 1px solid var(--btn-border);
+}
+
+#register-btns button:hover {
+    background-color: var(--btn-hover-bg);
+}
+
+#register-drawer {
+    height: 40px;
+    background-color: var(--drawer-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#drawer-handle {
+    width: 50px;
+    height: 10px;
+    background-color: var(--handle-bg);
+    border-radius: 3px;
+}
