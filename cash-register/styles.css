@@ -4,8 +4,8 @@
     --border-color: #666;
     --border-radius: 5px;
     --panel-bg: #ddd;
-    --screen-bg: black;
-    --screen-text: lime;
+    --screen-bg: #003300;
+    --screen-text: #00FF00; 
     --button-bg: #007bff;
     --button-hover-bg: #0056b3;
     --register-head-bg: #bbb;
@@ -16,6 +16,10 @@
     --btn-border: white;
     --bg-color1: rgb(234, 147, 246);
     --bg-color2: rgb(87, 18, 69);
+    --font-price-screen: 'VT323', monospace;
+    --font-title: 'Courier New', Courier, monospace;
+    --cash-drawer-panel-color1: rgb(14, 179, 188);
+    --cash-drawer-panel-color2: rgb(4, 93, 98);
 }
 
 body {
@@ -31,10 +35,25 @@ body {
 
 h1 {
     color: var(--text-color);
+    font-family: var(--font-title);
+    font-size: 3rem;
+}
+
+strong {
+    font-size: 16px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-size: 12px;
+    text-align: center;
 }
 
 label {
     font-size: 12px;
+    font-weight: bold;
 }
 
 #cash-register {
@@ -55,7 +74,7 @@ label {
     position: absolute;
     top: 0;
     right: 20px;
-    background-color: var(--screen-bg);
+    background-color: black;
     height: 40px;
     width: 120px;
     display: flex;
@@ -72,10 +91,13 @@ label {
 }
 
 #screen-price {
-    background-color: var(--screen-text);
+    background-color: var(--screen-bg);
+    color: var(--screen-text); 
     width: 80%;
     height: 60%;
     border-radius: 3px;
+    font-family: var(--font-price-screen);
+    font-size: 1.2rem;
 }
 
 #register-head {
@@ -134,7 +156,10 @@ button:hover {
     height: 90%;
     border: 2px solid var(--border-color);
     border-radius: var(--border-radius);
-    background-color: white;
+    background-color: var(--screen-bg);
+    color: var(--screen-text);
+    font-family: var(--font-price-screen);
+    /* background-image: linear-gradient(to bottom, var(--cash-drawer-panel-color1), var(--cash-drawer-panel-color2)); */
     position: absolute;
     bottom: 10px;
     right: 30px;
