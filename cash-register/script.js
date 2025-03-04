@@ -107,7 +107,7 @@ const calculateChange = (cash, price) => {
 
 purchaseBtn.addEventListener("click", checkResults);
 
-purchaseBtn.addEventListener('keydown', e => {
+cashInput.addEventListener('keydown', e => {
   if (e.key === 'Enter') {
     checkResults();
   }
