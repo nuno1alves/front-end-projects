@@ -1,4 +1,4 @@
-# Visite o projeto [clique aqui](https://nuno1alves.github.io/portfolio-websites/telephone-number-validator)
+# Visite o projeto [clique aqui](https://nuno1alves.github.io/front-end-projects/telephone-number-validator)
 
 ## 📞 Telephone Number Validator
 Este é um simples validador de números de telefone que verifica se um número inserido é um número de telefone válido dos EUA. O projeto utiliza HTML, CSS e JavaScript para criar uma interface interativa e estilizada.
